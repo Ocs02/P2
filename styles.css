@@ -1,11 +1,8 @@
 body {
   max-width: none;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-left: 84px;
+  margin-right: 84px;
   font-family: raleway;
-}
-.fasfa-map-marker-alt {
-  display: flex;
 }
 .reservia {
   display: flex;
@@ -20,6 +17,7 @@ body {
   margin-right: auto;
   padding-left: 0px;
   margin-top: -4px;
+  max-width: 120px;
 }
 .blocknav {
   display: flex;
@@ -52,71 +50,159 @@ body {
   flex-direction: column;
   line-height: 0.5;
 }
-.blocktitle1 {
-  display: flex;
-  font-size: 1em;
-  padding-top: 34px;
-  padding-bottom: 14px;
-}
 .text {
   display: flex;
-  font-size: 1em;
+}
+.marseille {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  border-color: lightgray;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+}
+.filtersin {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border-color: black;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.fa-map-marker-alt {
+  display: flex;
+  background-color: lightgray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: black;
+  margin-left: -34px;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.rechercher {
+  display: flex;
+  background-color: blue;
+  color: white;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.fa-money-bill-wave {
+  display: flex;
+  color: blue;
+  padding-right: 14px;
+  background-color: lightskyblue;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.fa-child {
+  display: flex;
+  color: blue;
+  padding-right: 14px;
+  background-color: lightskyblue;padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.fa-heart {
+  display: flex;
+  color: blue;
+  padding-right: 14px;
+  background-color: lightskyblue;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.fa-dog {
+  display: flex;
+  color: blue;
+  padding-right: 14px;
+  background-color: lightskyblue;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+}
+.fa-info-circle {
+  display: flex;
+  color: darkgrey;
+  margin-left: -14px;
+  padding-right: 10px;
+}
+.hbg {
+  display: flex;
 }
 .blocktitle {
   display: flex;
-  font-size: 1em;
-  padding-top: 1px;
+  margin-left: 34px;
+  margin-top: 64px;
 }
 .afficher {
   display: flex;
   padding-bottom: 34px;
   padding-left: 34px;
 }
-.block1 {
+.container2 {
   display: flex;
-  background-color: lightgray;
-  padding-bottom: 0px;
+  margin-bottom: 94px;
+}
+.blockpop {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+  border-radius: 60px;
+  padding-bottom: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  margin-left: 64px;
+}
+.miniblockpic {
+  display: flex;
+  background-color: white;
+  border-radius: 60px;
+  margin-top: 14px;
+  margin-bottom: 34px;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+.imgblock {
+  display: flex;
+  border-radius: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.blockheb {
+  display: flex;
+  background-color: #f2f2f2;
   flex-wrap: wrap;
   max-width: 2190px;
   word-wrap: normal;
   flex-direction: column;
+  border-radius: 60px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
-.mini11 {
+.miniblockheb {
   display: flex;
 }
-.mini12 {
+.blockact {
   display: flex;
-}
-.block2 {
-  display: flex;
+  background-color: white;
   padding-bottom: 64px;
   flex-wrap: wrap;
 }
-.inblock {
-  display: flex;
-  flex-direction: column;
-}
-.mini21 {
-  display: flex;
-  flex-direction: column;
-}
-.mini22 {
-  display: flex;
-  flex-direction: column;
-}
-.mini23 {
-  display: flex;
-  flex-direction: column;
-}
-.mini24 {
-  display: flex;
-  flex-direction: column;
-}
-.mini25 {
-  display: flex;
-  flex-direction: column;
-}
-.mini26 {
+.inblockact {
   display: flex;
   flex-direction: column;
 }
@@ -137,19 +223,15 @@ body {
   display: flex;
   margin-left: -16px;
 }
-.container {
-  display: flex;
-  margin-top: 34px;
-}
 footer {
   background-color: lightgray;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   margin-left: -64px;
-  margin-right: 990px;
-  padding-left: 34px;
-  padding-right: 24px;
+  margin-right: -64px;
+  padding-left: 64px;
+  padding-right: 64px;
   margin-top: 46px;
 }
 .footer-section {
