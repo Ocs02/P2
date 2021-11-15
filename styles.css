@@ -1,8 +1,6 @@
 body {
-  max-width: none;
-  margin-left: 84px;
-  margin-right: 84px;
   font-family: raleway;
+  background-color: beige;
 }
 .reservia {
   display: flex;
@@ -48,7 +46,11 @@ body {
 .trouvez {
   display: flex;
   flex-direction: column;
-  line-height: 0.5;
+  margin-bottom: 20px;
+}
+.nature {
+  display: flex;
+  margin-top: -10px;
 }
 .text {
   display: flex;
@@ -57,19 +59,41 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  border-color: lightgray;
+  padding-bottom: 24px;
+  margin-left: -34px;
+  align-items: center;
+}
+.inmarseille {
+  display: flex;
+  flex-direction: row;
+  margin-left: 34px;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid darkgrey;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .filters {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .filtersin {
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 40px;
   border-color: black;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border: 0.5px solid darkgrey;
+  align-items: center;
+}
+.textfilters {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 .fa-map-marker-alt {
   display: flex;
@@ -78,10 +102,13 @@ body {
   border-bottom-left-radius: 10px;
   color: black;
   margin-left: -34px;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid darkgrey;
+  align-self: center;
 }
 .rechercher {
   display: flex;
@@ -91,45 +118,55 @@ body {
   padding-left: 14px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .fa-money-bill-wave {
   display: flex;
   color: blue;
-  padding-right: 14px;
   background-color: lightskyblue;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  border-radius: 40px;
+  align-self: center;
 }
 .fa-child {
   display: flex;
   color: blue;
-  padding-right: 14px;
-  background-color: lightskyblue;padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  background-color: lightskyblue;
+  padding-left: 17px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 17px;
+  border-radius: 40px;
+  align-self: center;
 }
 .fa-heart {
   display: flex;
   color: blue;
-  padding-right: 14px;
   background-color: lightskyblue;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 15px;
+  border-radius: 40px;
+  align-self: center;
 }
 .fa-dog {
   display: flex;
   color: blue;
-  padding-right: 14px;
   background-color: lightskyblue;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-bottom: 4px;
-  padding-right: 4px;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  border-radius: 40px;
+  align-self: center;
 }
 .fa-info-circle {
   display: flex;
@@ -137,22 +174,46 @@ body {
   margin-left: -14px;
   padding-right: 10px;
 }
+.fa-chart-line {
+  display: flex;
+  margin-left: 64px;
+}
 .hbg {
   display: flex;
 }
-.blocktitle {
+.blockbigtitle {
   display: flex;
-  margin-left: 34px;
   margin-top: 64px;
+  margin-bottom: 34px;
+}
+.blocksmalltitle {
+  display: flex;
 }
 .afficher {
   display: flex;
   padding-bottom: 34px;
   padding-left: 34px;
 }
-.container2 {
+.containertwo {
   display: flex;
   margin-bottom: 94px;
+  max-width: 1200px;
+}
+.imgblockhbg {
+  display: flex;
+  border-radius: 60px;
+}
+.imgblockpop {
+  display: flex;
+  border-radius: 60px;
+}
+.imgblockactone {
+  display: flex;
+  border-radius: 60px;
+}
+.imgblockacttwo {
+  display: flex;
+  border-radius: 60px;
 }
 .blockpop {
   display: flex;
@@ -165,28 +226,60 @@ body {
   padding-right: 64px;
   margin-left: 64px;
 }
-.miniblockpic {
+.miniblockpichbg {
   display: flex;
   background-color: white;
   border-radius: 60px;
-  margin-top: 14px;
+  gap: 20px;
+  overflow: column;
+  object-fit: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 34px;
   margin-bottom: 34px;
-  margin-left: 34px;
-  margin-right: 34px;
 }
-.imgblock {
+.miniblockpicpop {
+  display: flex;
+  background-color: white;
+  border-radius: 60px;
+  gap: 20px;
+  overflow: column;
+  flex-direction: row;
+  object-fit: cover;
+  flex-wrap: nowrap;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  border: 3px solid white;
+}
+.miniblockpicact {
+  display: flex;
+  background-color: white;
+  border-radius: 60px;
+  gap: 20px;
+  overflow: column;
+  object-fit: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.actone {
+  display: flex;
+}
+.imgblockactone {
   display: flex;
   border-radius: 60px;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  object-fit: cover;
+}
+.imgblockacttwo {
+  display: flex;
+  border-radius: 60px;
+  object-fit: cover;
 }
 .blockheb {
   display: flex;
   background-color: #f2f2f2;
   flex-wrap: wrap;
-  max-width: 2190px;
   word-wrap: normal;
   flex-direction: column;
   border-radius: 60px;
@@ -195,12 +288,15 @@ body {
 }
 .miniblockheb {
   display: flex;
+  flex-wrap: wrap;
+  gap:20px;
 }
 .blockact {
   display: flex;
   background-color: white;
   padding-bottom: 64px;
   flex-wrap: wrap;
+  max-width: 330px;
 }
 .inblockact {
   display: flex;
@@ -255,7 +351,7 @@ footer {
   color: black;
 }
 .footer-section a {
-  color: blue;
+  color: black;
   text-decoration: none;
 }
 .image-wrapper {
