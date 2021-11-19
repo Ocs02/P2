@@ -1,8 +1,8 @@
 body {
   font-family: raleway;
   background-color: white;
-  margin: auto;
-  max-width: 1250px;
+  margin: 0 auto;
+  max-width: 1165px;
   margin-right: 34px;
   margin-left: 34px;
 }
@@ -32,6 +32,7 @@ body {
   margin-left: 34px;
   font-size: 14px;
   font-weight: thick;
+  border-top: 5px solid blue;
 }
 .nav-item a {
   display: flex;
@@ -64,6 +65,7 @@ body {
 .nature {
   display: flex;
   margin-top: -10px;
+  font-size: 13px;
 }
 .text {
   display: flex;
@@ -91,7 +93,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 10px;
+  font-size: 14px;
 }
 .filtersin {
   display: flex;
@@ -191,7 +193,7 @@ body {
 }
 .fa-chart-line {
   display: flex;
-  margin-left: 64px;
+  margin-left: 90px;
   margin-top: 3px;
 }
 .allstars {
@@ -207,85 +209,137 @@ body {
 }
 .hbg {
   display: flex;
-  font-size: 7px;
+  font-size: 13px;
+  margin-top: 10px;
 }
 .blockbigtitle {
   display: flex;
-  margin-top: 6px;
-  margin-bottom: 4px;
-  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .blocksmalltitle {
   display: flex;
   flex-direction: column;
-  font-size: 6px;
-  padding-bottom: 3px;
+  font-size: 12px;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  line-height: 1.5;
 }
 .bigsmalltitle {
   display: flex;
-  font-size: 6px;
   font-weight: bold;
-  margin-top: 3px;
+  width: 100%;
+  padding-top: 5px;
+}
+.nuit {
+  display: flex;
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+.smalltitleact {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.blockbigtitleact {
+  display: flex;
+  font-size: 20px;
 }
 .afficher {
   display: flex;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  font-size: 4px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 7px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .containertwo {
   display: flex;
   margin-bottom: 20px;
-  max-width: 1200px;
+  max-height: 100%;
+  margin-top: -20px;
+  gap: 20px;
+  margin-right: -34px;
+  margin-bottom: 50px;
 }
 .imgblockhbg {
   display: flex;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-fit: cover;
-  max-width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   padding-bottom: 4px;
+  max-width: 236px;
+  height: 90px;
+}
+.imgblockhbghalfmer {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4px;
+  height: 90px;
+}
+.imgblockhbghalfamina {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4px;
+  height: 90px;
 }
 .imgblockpop {
   display: flex;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   object-fit: cover;
-  max-width: 100px;
-}
-.imgblockactone {
-  display: flex;
-  border-radius: 10px;
-}
-.imgblockacttwo {
-  display: flex;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 .blockheb {
   display: flex;
-  background-color: grey;
+  background-color: lightgray;
   flex-wrap: wrap;
   word-wrap: normal;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 600px;
+  width: 100%;
+  height: 100%;
 }
 .miniblockheb {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-bottom: 25px;
 }
 .blockpop {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: lightgray;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 14px;
-  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  width: 500px;
+  height: 500px;
+  padding-bottom: 5px;
 }
 .miniblockpichbg {
   display: flex;
@@ -295,15 +349,14 @@ body {
   object-fit: cover;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 100px;
-  border: 1px solid white;
+  max-width: 213px;
+  border: 3px solid white;
   box-shadow: 6px 6px 6px var(darkgrey);
   align-items: center;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .miniblockpicpop {
   display: flex;
@@ -311,15 +364,64 @@ body {
   border-radius: 10px;
   overflow: column;
   flex-direction: row;
-  object-fit: cover;
   flex-wrap: nowrap;
   margin-top: 4px;
   margin-bottom: 4px;
-  border: 1px solid white;
-  max-width: 200px;
+  border: 3px solid white;
   box-shadow: 6px 6px 6px var(darkgrey);
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 110px;
 }
-.miniblockpicact {
+.blockact {
+  display: flex;
+  background-color: lightgray;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-right: -34px;
+  height: 100%;
+  gap: 20px;
+}
+.inblockact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.miniblockpicactvieuxportcalanques{
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px solid white;
+  max-width: 250px;
+  height: 400px;
+  box-shadow: 6px 6px 6px var(lightgray);
+}
+.divimgactvieuxportcalanques {
+  display: flex;
+  height: 100%;
+}
+.imgblockactonevieuxportcalanques {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 360px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.miniblockpicactfort {
   display: flex;
   background-color: white;
   border-radius: 10px;
@@ -331,56 +433,98 @@ body {
   margin-bottom: 4px;
   margin-left: 5px;
   margin-right: 5px;
-  max-width: 100px;
-  border: 1px solid white;
+  border: 0px solid white;
+  width: 240px;
+  height: 220px;
+  box-shadow: 6px 6px 6px var(darkgrey);
+}
+.divimgactfort {
+  display: flex;
+  height: 100%;
+}
+.imgblockactfort {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 180px;
+  width: 240px;
+}
+.miniblockpicactfrioul {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: column;
+  object-fit: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px solid white;
+  max-width: 240px;
+  height: 150px;
+  box-shadow: 6px 6px 6px var(darkgrey);
+}
+.divimgactfrioul {
+  display: flex;
+  height: 100%;
+}
+.imgblockactfrioul {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 110px;
+}
+.miniblockpicactgardelongchamps {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: column;
+  object-fit: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0px solid white;
+  width: 240px;
+  height: 180px;
+  box-shadow: 6px 6px 6px var(darkgrey);
+}
+.divimgactgardelongchamps {
+  display: flex;
+  height: 100%;
+}
+.imgblockactgardelongchamps {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  width: 240px;
+  height: 140px;
 }
 .divimghbg {
   display: flex;
-  max-width: 100px;
+  height: 100%;
+}
+.divimghbghalf {
+  display: flex;
+  height: 100%;
 }
 .divimgpop {
   display: flex;
-  max-width: 100px;
-  padding-right: 5px;
-}
-.divimgact {
-  display: flex;
-  height: 200px;
-  margin-bottom: 2px;
-}
-.divimgacthalf {
-  display: flex;
-  height: 100px;
-  max-width: 100px;
-}
-.imgblockactone {
-  display: flex;
-  border-radius: 10px;
-  object-fit: cover;
-  width: 100%;
   height: 100%;
-  max-width: 100px;
-}
-.imgblockacttwo {
-  display: flex;
-  border-radius: 10px;
-  object-fit: cover;
   width: 100%;
-  height: 100%;
-  max-width: 100px;
-}
-.blockact {
-  display: flex;
-  background-color: grey;
-  padding-bottom: 4px;
-  border-radius: 10px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-}
-.inblockact {
-  display: flex;
-  flex-direction: column;
-  max-width: 100px;
 }
 .section {
   display: flex;
@@ -408,7 +552,9 @@ footer {
   margin-right: -64px;
   padding-left: 64px;
   padding-right: 64px;
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 40px;
 }
 .footer-section {
   margin-right: auto;
