@@ -12,6 +12,7 @@ body {
 .top-header {
   display: flex;
   margin-left: -10px;
+  margin-bottom: 20px;
 }
 @media(max-width: 768px) {
   .top-header {
@@ -19,38 +20,43 @@ body {
   }
 }
 .top-header img {
-  margin-right: auto;
+  margin-right: 750px;
   max-width: 100px;
   max-height: 40px;
   margin-top: 30px;
 }
+@media(max-width: 768px) {
+  .top-header img {
+    margin-top: 23px;
+    margin-left: 10px;
+  }
+}
 .blocknav {
   display: flex;
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .blocknav {
     flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 100%;
   }
 }
-.nav-itemblue a {
+nav {
   display: flex;
-  color: #5e9dfc;
-  list-style: none;
-  text-decoration: none;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 14px;
-  border-top: 2px solid #0065FC;
-  line-height: 6.5;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: bolder;
 }
-@media(max-width: 768px) {
-  .nav-itemblue a {
-    flex-direction: column;
-    border-top: none;
-    line-height: none;
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    width: 50%;
+  }
+}
+.nav-item {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .nav-item {
+    display: flex;
   }
 }
 .nav-item a {
@@ -62,6 +68,27 @@ body {
   margin-left: 20px;
   font-size: 14px;
   padding-top: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media (max-width: 768px) {
+  .nav-item a {
+    display: flex;
+  }
+}
+.nav-item:hover a {
+  color: #5e9dfc;
+  border-top: 2px solid #0065fc;
+}
+@media (max-width: 768px) {
+  .nav-item:hover a {
+    display: flex;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+  }
+}
+.nav-inscription {
+  margin-left: 8px;
 }
 .nav-inscription a {
   display: flex;
@@ -70,12 +97,28 @@ body {
   text-decoration: none;
   padding-right: 5px;
   font-size: 14px;
-  color: #0065FC;
+  color: #0065fc;
   font-weight: bolder;
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .nav-inscription {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
 .nav-link-active a {
   display: flex;
+}
+.container {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .container {
+    margin-left: -20px;
+    margin-right: -30px;
+  }
 }
 .trouvez {
   display: flex;
@@ -84,6 +127,11 @@ body {
   font-size: 10px;
   line-height: 1.5;
   margin-top: -10px;
+}
+@media(max-width: 768px) {
+  .trouvez {
+    width: 270px;
+  }
 }
 .nature {
   display: flex;
@@ -98,9 +146,35 @@ body {
   flex-direction: row;
   margin-top: -5px;
   border-radius: 10px;
-  padding-bottom: 24px;
-  margin-left: -34px;
+  margin-bottom: 24px;
   align-items: center;
+}
+@media(max-width: 768px) {
+  .marseille {
+    margin-bottom: 20px;
+  }
+}
+.divmarsfr {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .divmarsfr {
+    margin-left: -10px;
+  }
+}
+.textmarseille {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .textmarseille {
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 9px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-right: 20px;
+    font-size: 14px;
+  }
 }
 .inmarseille {
   display: flex;
@@ -108,18 +182,36 @@ body {
   margin-left: 34px;
   gap: 10px;
   align-items: center;
-  border-bottom: 1px solid #F2F2F2;
-  border-top: 1px solid #F2F2F2;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   font-weight: bold;
   font-size: 12px;
 }
-.filters {
+.filter {
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 14px;
+  gap: 20px;
+  font-weight: bold;
+}
+@media(max-width: 768px) {
+  .filter {
+    width: 100%;
+  }
+}
+.filtersall {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  gap: 20px;
+  font-weight: bold;
+}
+@media(max-width: 768px) {
+  .filtersall {
+    flex-direction: column;
+    font-size: 10px;
+    width: 100px;
+  }
 }
 .filtersin {
   display: flex;
@@ -134,7 +226,51 @@ body {
   border-left: 1px solid #DEEBFF;
 }
 @media(max-width: 768px) {
-  .filters {
+  .filtersin {
+    width: 100%;
+  }
+}
+.filtersinmediarow {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .filtersinmediarow {
+    flex-direction: row;
+    margin-left: -30px;
+  }
+}
+.filtersinmediaeco {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .filtersinmediaeco {
+    margin-left: 40px;
+  }
+}
+.filtersinmediafam {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .filtersinmediafam {
+    margin-top: -53px;
+    margin-left: 300px;
+  }
+}
+.filtersinmedialov {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .filtersinmedialov {
+    margin-left: 50px;
+  }
+}
+.filtersinmediapets {
+  display: flex;
+}
+@media(max-width: 768px) {
+  .filtersinmediapets {
+    margin-left: 90px;
+    width: 222px;
   }
 }
 .textfilters {
@@ -174,6 +310,28 @@ body {
   padding-right: 10px;
   font-weight: bold;
   font-size: 12px;
+}
+@media(max-width: 768px) {
+  .rechercher {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.fa-search {
+  display: flex;
+  color: white;
+}
+@media(max-width: 768px) {
+  .fa-search {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 5px;
+    width: 22px;
+    height: 23px;
+    padding-left: 11px;
+    padding-top: 10px;
+  }
 }
 .fa-money-bill-wave {
   display: flex;
@@ -225,11 +383,15 @@ body {
 }
 .fa-info {
   display: flex;
-  color: blue;
-}
-.fa-circle {
-  display: flex;
-  color: grey;
+  color: #0065FC;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  height: 15px;
+  padding-top: 2px;
+  margin-left: 0px;
+  margin-right: 7px;
 }
 .fa-chart-line {
   display: flex;
@@ -239,7 +401,7 @@ body {
 .allstars {
   display: flex;
   flex-direction: row;
-  padding-top: 2px;
+  margin-top: auto;
 }
 .greystar {
   color: lightgray;
@@ -250,8 +412,21 @@ body {
 .hbg {
   display: flex;
   font-size: 13px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.blockbigtitlepop {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media(max-width: 768px) {
+  .blockbigtitlepop {
+    margin-left: 10px;
+  }
 }
 .blockbigtitle {
   display: flex;
@@ -261,13 +436,18 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
+@media(max-width: 768px) {
+  .blockbigtitle {
+    margin-left: -7px;
+  }
+}
 .blocksmalltitle {
   display: flex;
   flex-direction: column;
   font-size: 12px;
   height: 100%;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 10px;
   line-height: 1.5;
 }
 .bigsmalltitle {
@@ -287,19 +467,29 @@ body {
   font-size: 12px;
   font-weight: bold;
   padding-left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 .blockbigtitleact {
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
+}
+@media(max-width: 768px) {
+  .blockbigtitleact {
+    margin-left: -15px;
+  }
 }
 .afficher {
   display: flex;
+  padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
   font-size: 7px;
   font-weight: bold;
-  margin-bottom: 5px;
+}
+@media(max-width: 768px) {
+  .afficher {
+    margin-left: -5px;
+  }
 }
 .containertwo {
   display: flex;
@@ -311,39 +501,9 @@ body {
 }
 @media(max-width: 768px) {
   .containertwo {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-bottom: -20px;
   }
-}
-.imgblockhbg {
-  display: flex;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 4px;
-  max-width: 236px;
-  height: 90px;
-}
-.imgblockhbghalfmer {
-  display: flex;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 4px;
-  height: 90px;
-}
-.imgblockhbghalfamina {
-  display: flex;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 4px;
-  height: 90px;
 }
 .imgblockpop {
   display: flex;
@@ -360,10 +520,18 @@ body {
   word-wrap: normal;
   flex-direction: column;
   border-radius: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%;
   height: 100%;
+}
+@media(max-width: 768px) {
+  .blockheb {
+    margin-top: -20px;
+    margin-left: -39px;
+    background-color: white;
+    box-shadow: none;
+  }
 }
 .miniblockheb {
   display: flex;
@@ -371,7 +539,77 @@ body {
   width: 100%;
   height: 100%;
   flex-direction: row;
-  margin-bottom: 25px;
+  padding-right: 20px;
+  gap: 30px;
+}
+.miniblockpichbg {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: column;
+  object-fit: cover;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 225px;
+  border: 5px solid white;
+  box-shadow: 6px 6px 6px lightgray;
+  width: 100%;
+  height: 100%;
+}
+@media(max-width: 768px) {
+  .miniblockpichbg {
+    max-width: none;
+    margin-left: -10px;
+    max-width: 290px;
+    margin-bottom: -10px;
+  }
+}
+.imgblockhbg {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4px;
+  max-width: 225px;
+  height: 90px;
+}
+@media(max-width: 768px) {
+  .imgblockhbg {
+    max-width: 290px;
+    height: 100px;
+  }
+}
+.imgblockhbghalfmer {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4px;
+  height: 90px;
+}
+@media(max-width: 768px) {
+  .imgblockhbghalfmer {
+    height: 100px;
+  }
+}
+.imgblockhbghalfamina {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4px;
+  height: 90px;
+}
+@media(max-width: 768px) {
+  .imgblockhbghalfamina {
+    height: 105px;
+  }
 }
 .blockpop {
   display: flex;
@@ -388,21 +626,12 @@ body {
   height: 500px;
   padding-bottom: 5px;
 }
-.miniblockpichbg {
-  display: flex;
-  background-color: white;
-  border-radius: 10px;
-  overflow: column;
-  object-fit: cover;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  max-width: 218px;
-  border: 3px solid white;
-  box-shadow: 6px 6px 6px lightgray;
-  width: 100%;
-  height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+@media(max-width: 768px) {
+  .blockpop {
+    width: 320px;
+    border-radius: 0px;
+    margin-left: -34px;
+  }
 }
 .miniblockpicpop {
   display: flex;
@@ -413,7 +642,7 @@ body {
   flex-wrap: nowrap;
   margin-top: 4px;
   margin-bottom: 4px;
-  border: 3px solid white;
+  border: 5px solid white;
   box-shadow: 6px 6px 6px lightgray;
   max-width: 100%;
   max-height: 100%;
@@ -421,7 +650,15 @@ body {
   margin-bottom: 22px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 110px;
+  height: 107px;
+}
+@media(max-width: 768px) {
+  .miniblockpicpop {
+    width: 270px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
 }
 .blockact {
   display: flex;
@@ -432,8 +669,11 @@ body {
   height: 100%;
   gap: 30px;
 }
-@media(max-width: 768px ) {
+@media(max-width: 768px) {
   .blockact {
+    gap: 20px;
+    flex-direction: column;
+    margin-left: -15px;
   }
 }
 .inblockact {
@@ -441,7 +681,7 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-.miniblockpicactvieuxportcalanques{
+.miniblockpicactvieuxportcalanques {
   display: flex;
   background-color: white;
   border-radius: 10px;
@@ -454,9 +694,22 @@ body {
   height: 400px;
   box-shadow: 6px 6px 6px lightgray;
 }
+@media(max-width: 768px) {
+  .miniblockpicactvieuxportcalanques {
+    height: 175px;
+    width: 275px;
+    max-width: none;
+    margin-right: 0px;
+  }
+}
 .divimgactvieuxportcalanques {
   display: flex;
   height: 100%;
+}
+@media(max-width: 768px) {
+  .divimgactvieuxportcalanques {
+    height: 140px;
+  }
 }
 .imgblockactonevieuxportcalanques {
   display: flex;
@@ -466,6 +719,12 @@ body {
   height: 355px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+@media(max-width: 768px) {
+  .imgblockactonevieuxportcalanques {
+    height: 125px;
+    width: 275px;
+  }
 }
 .miniblockpicactfort {
   display: flex;
@@ -482,9 +741,23 @@ body {
   height: 220px;
   box-shadow: 6px 6px 6px lightgray;
 }
+@media(max-width: 768px) {
+  .miniblockpicactfort {
+    height: 175px;
+    width: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: -10px;
+  }
+}
 .divimgactfort {
   display: flex;
   height: 100%;
+}
+@media(max-width: 768px) {
+  .divimgactfort {
+    height: 140px;
+  }
 }
 .imgblockactfort {
   display: flex;
@@ -495,6 +768,12 @@ body {
   height: 100%;
   height: 175px;
   width: 271px;
+}
+@media(max-width: 768px) {
+  .imgblockactfort {
+    height: 125px;
+    width: 275px;
+  }
 }
 .miniblockpicactfrioul {
   display: flex;
@@ -511,9 +790,23 @@ body {
   height: 150px;
   box-shadow: 6px 6px 6px lightgray;
 }
+@media(max-width: 768px) {
+  .miniblockpicactfrioul {
+    height: 175px;
+    width: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 .divimgactfrioul {
   display: flex;
-  height: 100%;
+  overflow: hidden;
+}
+@media(max-width: 768px) {
+  .divimgactfrioul {
+    height: 140px;
+    width: 275px;
+  }
 }
 .imgblockactfrioul {
   display: flex;
@@ -521,8 +814,15 @@ body {
   border-top-right-radius: 10px;
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  height: 105px;
+  height: 159px;
+}
+@media(max-width: 768px) {
+  .imgblockactfrioul {
+    height: 200px;
+    width: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 .miniblockpicactgardelongchamps {
   display: flex;
@@ -538,9 +838,22 @@ body {
   height: 185px;
   box-shadow: 6px 6px 6px lightgray;
 }
+@media(max-width: 768px) {
+  .miniblockpicactgardelongchamps {
+    height: 175px;
+    width: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 .divimgactgardelongchamps {
   display: flex;
   height: 100%;
+}
+@media(max-width: 768px) {
+  .divimgactgardelongchamps {
+    height: 140px;
+  }
 }
 .imgblockactgardelongchamps {
   display: flex;
@@ -551,6 +864,14 @@ body {
   height: 100%;
   width: 271px;
   height: 140px;
+}
+@media(max-width: 768px) {
+  .imgblockactgardelongchamps {
+    height: 125px;
+    width: 275px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 .divimghbg {
   display: flex;
