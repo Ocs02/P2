@@ -3,8 +3,9 @@ body {
   background-color: white;
   margin: 0 auto;
   max-width: 1165px;
-  margin-right: 34px;
-  margin-left: 34px;
+  padding-right: 34px;
+  padding-left: 34px;
+  max-width: 100%;
 }
 .reservia {
   display: flex;
@@ -16,7 +17,7 @@ body {
 }
 @media(max-width: 768px) {
   .top-header {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 .top-header img {
@@ -56,7 +57,7 @@ nav {
 }
 @media (max-width: 768px) {
   .nav-item {
-    display: flex;
+    display: 1;
   }
 }
 .nav-item a {
@@ -76,12 +77,12 @@ nav {
     display: flex;
   }
 }
-.nav-item:hover a {
+.nav-item:hover {
   color: #5e9dfc;
   border-top: 2px solid #0065fc;
 }
 @media (max-width: 768px) {
-  .nav-item:hover a {
+  .nav-item:hover {
     display: flex;
     border-bottom: 2px solid #0065fc;
     border-top: none;
